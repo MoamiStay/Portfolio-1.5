@@ -6,33 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./media/css/all.css" />
-    <title>Moami home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+    <title style="font-size: medium">Moami home</title>
   </head>
-  <body class="bg">
-    <header>
-      <p>Moami</p>
-      <nav>
-        <button>Dark mode</button>
-        <ul>
+  <body class="bg-bg_light dark:bg-bg_dark">
+    <header class="w-4/5 mx-auto">
+      <p
+        class="text-white font-bold text-center p-4 w-32 mx-auto rounded-b-full bg-light_secondary dark:bg-dark_secondary"
+      >
+        Moami
+      </p>
+      <nav class="flex flex-col mt-2">
+        <button
+          class="text-[#2C2C34] dark:text-[#FFD3DB] flex justify-end mb-2"
+        >
+          (Dark mode is automatic)
+        </button>
+        <ul class="text-dark_text dark:text-light_text flex justify-between">
           <li>ABOUT ME</li>
           <li>WEBSITES</li>
           <li>LOGOS</li>
           <li>CONTACT</li>
         </ul>
-        <ul>
+        <ul class="md:hidden">
           <li><i class="fa-brands fa-instagram"></i></li>
           <li><i class="fa-brands fa-github"></i></li>
           <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
+        <div class="w-6 object-contain">
+          <img src="./media/img/back-to-top.png" alt="" />
+        </div>
       </nav>
     </header>
     <main>
       <section id="landing">
-        <div>
-          <div>
-            <div>
-              <h2>Front-End Development</h2>
-              <h2>& Design</h2>
+        <div
+          class="p-5 mt-8 w-3/4 md:w-2/3 text-dark_text dark:text-light_text"
+        >
+          <div
+            class="flex justify-end border-solid border-2 rounded-3xl border-white"
+          >
+            <div
+              class="m-6 px-10 py-4 rounded-3xl w-4/5 flex flex-col justify-end bg-light_text_bg dark:bg-dark_text_bg"
+            >
+              <h2 class="text-3xl">Front-End Development</h2>
+              <h2 class="text-3xl mb-3 fancy">& Design</h2>
               <p>I design and build websites using HTML, CSS and Javascript.</p>
               <p>
                 I enjoy working on design and prototyping. I use tools such as
@@ -51,10 +74,96 @@
       </section>
       <img src="./media/light/piece1.png" alt="" />
       <img src="./media/light/piece2.png" alt="" />
-      <section class="aboutme"></section>
-      <section class="websites"></section>
-      <section class="logos"></section>
-      <section class="contact"></section>
+      <img src="./media/light/piece3.png" alt="" />
+
+      <section class="aboutme">
+        <img src="./media/light/pf-pic.png" alt="" />
+        <div>
+          <div>
+            <p>
+              Born in Stavanger, raised in Molde and currently settled in
+              Bergen. I enjoy designing by myself, at home in front of my trusty
+              laptop with a can of sodapop or hot chocolate. Just give me time
+              to nap and I’ll be happy.
+            </p>
+          </div>
+          <div>
+            <p>
+              Born in Stavanger, raised in Molde and currently settled in
+              Bergen. I enjoy designing by myself, at home in front of my trusty
+              laptop with a can of sodapop or hot chocolate. Just give me time
+              to nap and I’ll be happy.
+            </p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>*react</li>
+            <li>sass</li>
+            <li>wordpress</li>
+            <li>bootstrap</li>
+            <li>tailwind</li>
+          </ul>
+          <ul>
+            <li>figma</li>
+            <li>photoshop</li>
+            <li>illustrator</li>
+          </ul>
+        </div>
+      </section>
+
+      <img src="./media/light/piece4.png" alt="" />
+      <img src="./media/light/piece5.png" alt="" />
+
+      <section class="websites">
+        <div>
+          <a href="#"> <img src="./media/img/rainy_days.jpg" alt="#" /></a>
+          <a href="#"> <img src="./media/img/museum.jpg" alt="#" /></a>
+          <a href="#"> <img src="./media/img/woodz.jpg" alt="#" /></a>
+        </div>
+      </section>
+
+      <img src="./media/light/piece6.png" alt="" />
+
+      <section class="logos">
+        <div>
+          <img src="logo" alt="logo" />
+          <div>
+            <p>
+              I enjoy creating logos. Although I have not yet had the
+              opportunity to create any official logos for any companies.
+            </p>
+            <p>
+              If you got a good idea for a logo I would love to help develop the
+              idea.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./media/logos/altlogo.png" alt="#" />
+          <img src="./media/logos/bidwell_light.png" alt="#" />
+          <img src="./media/logos/bidwell_dark.png" alt="#" />
+          <img src="./media/logos/flipzone_light.png" alt="#" />
+          <img src="./media/logos/flipzone_dark.png" alt="#" />
+          <img src="./media/logos/holidaze.png" alt="#" />
+          <img src="./media/logos/saa.png" alt="#" />
+          <img src="./media/logos/silje.png" alt="#" />
+        </div>
+      </section>
+      <section class="contact">
+        <div>
+          <h2>Interessted? Let's have a chat</h2>
+          <p>
+            Got some interesting idea to share? Or are you just curious and want
+            to say hi?
+          </p>
+          <button>Send email</button>
+        </div>
+      </section>
+      <img src="./media/light/piece7.png" alt="" />
+      <img src="./media/light/piece8.png" alt="" />
     </main>
   </body>
 </html>

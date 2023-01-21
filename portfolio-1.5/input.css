@@ -11,5 +11,22 @@
 }
 
 .green {
-  color: green;
+  color: #008000;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.medium-copytext {
+  font-size: medium;
+}
+
+.bold-copytext {
+  font-size: large;
+}
+
+.fancy {
+  font-family: "Moul", cursive;
+  text-shadow: #6b68fb 2px 4px 0px;
 }
