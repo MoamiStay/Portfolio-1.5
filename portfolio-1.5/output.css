@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -527,9 +531,9 @@ video {
 }
 
 .bg {
-  background-color: aqua;
+  background-color: rgb(250, 195, 234);
 }
 
 .red {
-  color: red;
+  color: rgb(255, 255, 255);
 }
