@@ -28,5 +28,31 @@
 
 .fancy {
   font-family: "Moul", cursive;
+  text-shadow: #e0aab5 2px 4px 0;
+}
+
+.fancy_dark {
+  font-family: "Moul", cursive;
   text-shadow: #6b68fb 2px 4px 0px;
+}
+
+.bubble {
+  border-radius: 6.5rem;
+}
+
+.piece1 {
+  position: relative;
+  left: 55%;
+}
+
+.piece2 {
+  position: relative;
+  bottom: 125px;
+}
+
+.piece3 {
+  position: relative;
+  right: 30%;
+  bottom: 400px;
+  width: 25%;
 }

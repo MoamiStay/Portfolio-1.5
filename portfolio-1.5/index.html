@@ -15,18 +15,15 @@
     <title style="font-size: medium">Moami home</title>
   </head>
   <body class="bg-bg_light dark:bg-bg_dark">
-    <header class="w-4/5 mx-auto">
+    <header
+      class="w-full md:w-2/3 mx-auto sticky top-0 z-10 bg-[#f8ccd4c9] dark:bg-[#2c2c34c4] shadow-lg"
+    >
       <p
-        class="text-white font-bold text-center p-4 w-32 mx-auto rounded-b-full bg-light_secondary dark:bg-dark_secondary"
+        class="text-white text-sm font-bold text-center px-4 py-2 w-32 mx-auto rounded-b-full bg-light_secondary dark:bg-dark_secondary"
       >
         Moami
       </p>
-      <nav class="flex flex-col mt-2">
-        <button
-          class="text-[#2C2C34] dark:text-[#FFD3DB] flex justify-end mb-2"
-        >
-          (Dark mode is automatic)
-        </button>
+      <nav class="flex flex-col px-3 py-2">
         <ul class="text-dark_text dark:text-light_text flex justify-between">
           <li>ABOUT ME</li>
           <li>WEBSITES</li>
@@ -38,24 +35,24 @@
           <li><i class="fa-brands fa-github"></i></li>
           <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
-        <div class="w-6 object-contain">
+        <div class="w-6 object-contain fixed bottom-10 right-10">
           <img src="./media/img/back-to-top.png" alt="" />
         </div>
       </nav>
     </header>
     <main>
-      <section id="landing">
+      <section id="landing" class="w-full lg:w-2/3 mx-auto flex">
         <div
-          class="p-5 mt-8 w-3/4 md:w-2/3 text-dark_text dark:text-light_text"
+          class="p-5 mt-28 w-5/6 md:w-4/5 text-dark_text dark:text-light_text"
         >
           <div
-            class="flex justify-end border-solid border-2 rounded-3xl border-white"
+            class="flex justify-end border-solid border-2 bubble border-white"
           >
             <div
-              class="m-6 px-10 py-4 rounded-3xl w-4/5 flex flex-col justify-end bg-light_text_bg dark:bg-dark_text_bg"
+              class="m-12 px-16 py-12 bubble w-4/5 flex flex-col justify-end bg-light_text_bg dark:bg-dark_text_bg"
             >
               <h2 class="text-3xl">Front-End Development</h2>
-              <h2 class="text-3xl mb-3 fancy">& Design</h2>
+              <h2 class="text-3xl mb-3 fancy dark:fancy_dark">& Design</h2>
               <p>I design and build websites using HTML, CSS and Javascript.</p>
               <p>
                 I enjoy working on design and prototyping. I use tools such as
@@ -64,53 +61,90 @@
             </div>
           </div>
           <div>
-            <ul>
+            <ul class="flex gap-3">
               <li><i class="fa-brands fa-instagram"></i></li>
               <li><i class="fa-brands fa-github"></i></li>
               <li><i class="fa-brands fa-linkedin"></i></li>
             </ul>
           </div>
         </div>
-      </section>
-      <img src="./media/light/piece1.png" alt="" />
-      <img src="./media/light/piece2.png" alt="" />
-      <img src="./media/light/piece3.png" alt="" />
 
-      <section class="aboutme">
-        <img src="./media/light/pf-pic.png" alt="" />
         <div>
-          <div>
-            <p>
-              Born in Stavanger, raised in Molde and currently settled in
-              Bergen. I enjoy designing by myself, at home in front of my trusty
-              laptop with a can of sodapop or hot chocolate. Just give me time
-              to nap and I’ll be happy.
-            </p>
+          <div class="hidden dark:flex justify-end w-full">
+            <div class="relative piece1">
+              <img src="./media/dark/piece1_dark.png" alt="" />
+            </div>
           </div>
-          <div>
-            <p>
-              Born in Stavanger, raised in Molde and currently settled in
-              Bergen. I enjoy designing by myself, at home in front of my trusty
-              laptop with a can of sodapop or hot chocolate. Just give me time
-              to nap and I’ll be happy.
-            </p>
+          <div class="flex dark:hidden justify-end w-full">
+            <div class="relative piece1">
+              <img src="./media/light/piece1.png" alt="" />
+            </div>
           </div>
         </div>
-        <div>
-          <ul>
-            <li>html</li>
-            <li>css</li>
-            <li>*react</li>
-            <li>sass</li>
-            <li>wordpress</li>
-            <li>bootstrap</li>
+      </section>
+
+      <div class="hidden dark:flex w-full">
+        <div class="piece2 w-1/3">
+          <img src="./media/dark/piece2_dark.png" alt="" />
+        </div>
+      </div>
+      <div class="flex dark:hidden w-full">
+        <div class="piece2 w-1/3">
+          <img src="./media/light/piece2.png" alt="" />
+        </div>
+      </div>
+
+      <section id="aboutme" class="w-full lg:w-2/3 mx-auto">
+        <div class="flex">
+          <div class="w-full">
+            <img src="./media/light/pf-pic.png" alt="" />
+          </div>
+          <div
+            class="flex gap-7 ml-6 py-6 px-10 items-center border-solid border-2 bubble border-white"
+          >
+            <div>
+              <p>
+                Born in Stavanger, raised in Molde and currently settled in
+                Bergen. I enjoy designing by myself, at home in front of my
+                trusty laptop with a can of sodapop or hot chocolate. Just give
+                me time to nap and I’ll be happy.
+              </p>
+            </div>
+            <div>
+              <p>
+                Born in Stavanger, raised in Molde and currently settled in
+                Bergen. I enjoy designing by myself, at home in front of my
+                trusty laptop with a can of sodapop or hot chocolate. Just give
+                me time to nap and I’ll be happy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col mt-3">
+          <ul class="flex">
+            <li><i class="px-2 fa-brands fa-html5"></i></li>
+            <li><i class="px-2 fa-brands fa-css3-alt"></i></li>
+            <li class="hidden"><i class="px-2 fa-brands fa-react"></i></li>
+            <li><i class="px-2 fa-brands fa-sass"></i></li>
+            <li><i class="px-2 fa-brands fa-wordpress"></i></li>
+            <li><i class="px-2 fa-brands fa-bootstrap"></i></li>
             <li>tailwind</li>
           </ul>
-          <ul>
-            <li>figma</li>
-            <li>photoshop</li>
-            <li>illustrator</li>
+          <ul class="flex mt-2">
+            <li><i class="px-2 fa-brands fa-figma"></i></li>
+            <li class="px-2">photoshop</li>
+            <li class="px-2">illustrator</li>
           </ul>
+        </div>
+        <div class="hidden dark:flex w-full">
+          <div class="piece3">
+            <img src="./media/dark/piece3_dark.png" alt="" />
+          </div>
+        </div>
+        <div class="flex dark:hidden w-full">
+          <div class="piece3">
+            <img src="./media/light/piece3.png" alt="" />
+          </div>
         </div>
       </section>
 
