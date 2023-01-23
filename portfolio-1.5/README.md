@@ -8,9 +8,9 @@ This is the first "draft" of my portfolio page. As it currently stands it is not
 
 The page supports dark mode and is set to match the system settings.
 
-commands:
-build: npm run build
-preview: npm run preview
+commands:  
+build: npm run build  
+preview: npm run preview  
 developer mode: npm run dev
 
 ---
@@ -25,19 +25,20 @@ But the page will be found on it's own domain in short time.
 # WCAG color contrast:
 
 ![WCAG](./media/submission/color-contrast.jpg "WCAG")
+
 source: https://webaim.org/resources/contrastchecker/
 
 ---
 
 # of things to be done:
 
-SET UP PROPER DOMAIN
-CURRENT "PAGE" TRACKER
-PORTFOLIOPAGES DROPDOWN INFO ON HOVER
-MOBILE CAROUSEL/SWIPE PORTFOLIO
-FIX BACK-TO-TOP BUTTON DESIGN TO BE MORE VISIBLE
-FIX SHADOW COLOR ON "DESIGN"
-ACHOR LINKS WORK MORE PROPERLY
-MENU SMOOTH SCROLL BETWEEN ANCHORS
-ADD ANIMATIONS AND HOVER EFFECTS
+SET UP PROPER DOMAIN  
+CURRENT "PAGE" TRACKER  
+PORTFOLIOPAGES DROPDOWN INFO ON HOVER  
+MOBILE CAROUSEL/SWIPE PORTFOLIO  
+FIX BACK-TO-TOP BUTTON DESIGN TO BE MORE VISIBLE  
+FIX SHADOW COLOR ON "DESIGN"  
+ACHOR LINKS WORK MORE PROPERLY  
+MENU SMOOTH SCROLL BETWEEN ANCHORS  
+ADD ANIMATIONS AND HOVER EFFECTS  
 FIX SPACING AND ALIGNMENT
