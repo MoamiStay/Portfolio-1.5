@@ -30,7 +30,7 @@
           <li><a href="#logos">LOGOS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
-        <ul class="md:hidden">
+        <ul class="md:hidden flex gap-5">
           <li><i class="fa-brands fa-instagram"></i></li>
           <li><i class="fa-brands fa-github"></i></li>
           <li><i class="fa-brands fa-linkedin"></i></li>
@@ -41,7 +41,10 @@
       </nav>
     </header>
     <main>
-      <section id="top" class="w-full lg:w-2/3 mx-auto flex">
+      <section
+        id="top"
+        class="w-full sm:flex sm:flex-col md:flex-row lg:w-2/3 mx-auto"
+      >
         <div
           class="p-5 mt-28 w-5/6 md:w-4/5 text-dark_text dark:text-light_text"
         >
@@ -83,12 +86,12 @@
         </div>
       </section>
 
-      <div class="hidden dark:flex w-full">
+      <div class="hidden dark:flex w-full sm:hidden">
         <div class="piece2 w-1/3">
           <img src="./media/dark/piece2_dark.png" alt="" />
         </div>
       </div>
-      <div class="flex dark:hidden w-full">
+      <div class="flex dark:hidden w-full sm:hidden">
         <div class="piece2 w-1/3">
           <img src="./media/light/piece2.png" alt="" />
         </div>
@@ -98,14 +101,27 @@
         class="w-full lg:w-2/3 mx-auto text-dark_text dark:text-light_text"
       >
         <h2 id="aboutme" class="text-lg text-center">ABOUT ME</h2>
-        <div class="flex relative top-48">
-          <div class="w-full">
-            <img src="./media/light/pf-pic.png" alt="" />
-          </div>
+        <div class="flex sm:flex-col lg:flex-row relative top-48">
           <div
-            class="flex gap-7 ml-6 py-6 px-10 items-center border-solid border-2 bubble border-white"
+            class="hidden dark:flex mr-5 w-full lg:w-1/4 justify-center items-center"
           >
-            <div>
+            <div class="sm:w-1/3 md:w-1/5 lg:w-full sm:pb-5">
+              <img src="./media/dark/pf-pic_dark.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="flex dark:hidden mr-5 w-full lg:w-1/4 justify-center items-center"
+          >
+            <div class="sm:w-1/3 md:w-1/5 lg:w-full sm:pb-5">
+              <img src="./media/light/pf-pic.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:w-3/4 sm:mx-auto md:flex-row gap-7 ml-6 py-6 px-10 items-center border-solid border-2 bubble border-white"
+          >
+            <div class="sm:p-5">
               <p>
                 Born in Stavanger, raised in Molde and currently settled in
                 Bergen. I enjoy designing by myself, at home in front of my
@@ -113,7 +129,7 @@
                 me time to nap and I’ll be happy.
               </p>
             </div>
-            <div>
+            <div class="sm-p-5">
               <p>
                 Born in Stavanger, raised in Molde and currently settled in
                 Bergen. I enjoy designing by myself, at home in front of my
@@ -124,7 +140,7 @@
           </div>
         </div>
         <div class="flex flex-col mt-3 relative top-48">
-          <ul class="flex">
+          <ul class="flex sm:justify-center lg:justify-start">
             <li><i class="px-2 fa-brands fa-html5"></i></li>
             <li><i class="px-2 fa-brands fa-css3-alt"></i></li>
             <li class="hidden"><i class="px-2 fa-brands fa-react"></i></li>
@@ -133,7 +149,7 @@
             <li><i class="px-2 fa-brands fa-bootstrap"></i></li>
             <li>tailwind</li>
           </ul>
-          <ul class="flex mt-2">
+          <ul class="flex mt-2 sm:justify-center lg:justify-start">
             <li><i class="px-2 fa-brands fa-figma"></i></li>
             <li class="px-2">photoshop</li>
             <li class="px-2">illustrator</li>
@@ -199,11 +215,13 @@
         class="relative top-60 w-full lg:w-2/3 mx-auto text-dark_text dark:text-light_text"
       >
         <h2 id="logos" class="text-lg text-center mb-24">LOGOS</h2>
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row items-center">
           <div
-            class="flex py-6 px-10 mr-5 w-1/2 items-center border-solid border-2 bubble border-white"
+            class="flex flex-col lg:flex-row sm:w-4/5 py-6 px-10 mr-5 w-1/2 items-center border-solid border-2 bubble border-white"
           >
-            <div class="w-1/4 mr-3 flex items-center">
+            <div
+              class="w-1/5 lg:w-1/4 mb-3 lg:mr-3 flex flex-col lg:flex-row items-center"
+            >
               <img src="./media/logos/mylogo.png" alt="moami logo" />
             </div>
             <div>
@@ -217,7 +235,9 @@
               </p>
             </div>
           </div>
-          <div class="w-1/3 grid grid-rows-2 grid-flow-col gap-4">
+          <div
+            class="mt-5 sm:w-1/2 lg:w-1/3 grid grid-rows-2 grid-flow-col gap-4"
+          >
             <div>
               <img src="./media/logos/altlogo.png" alt="#" />
             </div>
@@ -247,29 +267,31 @@
       </section>
 
       <div class="hidden dark:block w-full">
-        <div class="flex justify-end relative bottom-28">
+        <div class="flex justify-end relative sm:bottom-10 md:bottom-28">
           <img src="./media/dark/piece6_dark.png" alt="" />
         </div>
       </div>
       <div class="block dark:hidden w-full">
-        <div class="flex justify-end relative bottom-28">
+        <div class="flex justify-end relative sm:bottom-10 md:bottom-28">
           <img src="./media/light/piece6.png" alt="" />
         </div>
       </div>
 
       <section
-        class="relative top-60 w-1/3 lg:w-2/3 mx-auto flex flex-col justify-center items-center p-20 bg-[#EC768D] dark:bg-[#6A68DE] bubble text-light_text"
+        id="contact"
+        class="relative top-60 w-5/6 md:w-3/4 lg:w-2/3 mx-auto flex flex-col justify-center items-center p-20 bg-[#EC768D] dark:bg-[#6A68DE] bubble text-light_text"
       >
-        <h2 class="text-xl font-bold text-center">
+        <h2 class="text-xl font-bold text-center mt-5">
           Interessted? Let's have a chat
         </h2>
-        <p>
+        <p class="mt-3">
           Got some interesting idea to share? Or are you just curious and want
           to say hi?
         </p>
-        <button class="p-3 bubble bg-[#5FC5B2] dark:bg-[#EF8DA0]">
-          Send email
-        </button>
+        <div class="py-3 px-5 mt-5 bubble bg-[#5FC5B2] dark:bg-[#EF8DA0]">
+          <a href="mailto: reginenaas@gmail.com">Send Email</a>
+        </div>
+        <p class="mt-3 text-sm text-center">reginenaas@gmail.com</p>
       </section>
 
       <div class="flex items-baseline w-full">
