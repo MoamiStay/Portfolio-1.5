@@ -56,3 +56,13 @@
   bottom: 400px;
   width: 25%;
 }
+
+.piece4 {
+  position: relative;
+  left: 150%;
+}
+
+.piece5 {
+  position: relative;
+  right: 130%;
+}

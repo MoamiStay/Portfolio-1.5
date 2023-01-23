@@ -14,7 +14,7 @@
     />
     <title style="font-size: medium">Moami home</title>
   </head>
-  <body class="bg-bg_light dark:bg-bg_dark">
+  <body class="bg-bg_light dark:bg-bg_dark relative overflow-x-hidden">
     <header
       class="w-full md:w-2/3 mx-auto sticky top-0 z-10 bg-[#f8ccd4c9] dark:bg-[#2c2c34c4] shadow-lg"
     >
@@ -25,10 +25,10 @@
       </p>
       <nav class="flex flex-col px-3 py-2">
         <ul class="text-dark_text dark:text-light_text flex justify-between">
-          <li>ABOUT ME</li>
-          <li>WEBSITES</li>
-          <li>LOGOS</li>
-          <li>CONTACT</li>
+          <li><a href="#aboutme">ABOUT ME</a></li>
+          <li><a href="#websites">WEBSITES</a></li>
+          <li><a href="#logos">LOGOS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
         <ul class="md:hidden">
           <li><i class="fa-brands fa-instagram"></i></li>
@@ -36,12 +36,12 @@
           <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
         <div class="w-6 object-contain fixed bottom-10 right-10">
-          <img src="./media/img/back-to-top.png" alt="" />
+          <a href="#top"> <img src="./media/img/back-to-top.png" alt="" /></a>
         </div>
       </nav>
     </header>
     <main>
-      <section id="landing" class="w-full lg:w-2/3 mx-auto flex">
+      <section id="top" class="w-full lg:w-2/3 mx-auto flex">
         <div
           class="p-5 mt-28 w-5/6 md:w-4/5 text-dark_text dark:text-light_text"
         >
@@ -94,8 +94,11 @@
         </div>
       </div>
 
-      <section id="aboutme" class="w-full lg:w-2/3 mx-auto">
-        <div class="flex">
+      <section
+        class="w-full lg:w-2/3 mx-auto text-dark_text dark:text-light_text"
+      >
+        <h2 id="aboutme" class="text-lg text-center">ABOUT ME</h2>
+        <div class="flex relative top-48">
           <div class="w-full">
             <img src="./media/light/pf-pic.png" alt="" />
           </div>
@@ -120,7 +123,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col mt-3">
+        <div class="flex flex-col mt-3 relative top-48">
           <ul class="flex">
             <li><i class="px-2 fa-brands fa-html5"></i></li>
             <li><i class="px-2 fa-brands fa-css3-alt"></i></li>
@@ -148,56 +151,149 @@
         </div>
       </section>
 
-      <img src="./media/light/piece4.png" alt="" />
-      <img src="./media/light/piece5.png" alt="" />
+      <section
+        class="w-full lg:w-2/3 mx-auto text-dark_text dark:text-light_text"
+      >
+        <h2 id="websites" class="text-lg text-center mb-10">WEBSITES</h2>
+        <div class="flex">
+          <div class="hidden dark:flex w-full">
+            <div class="piece5">
+              <img src="./media/dark/piece5_dark.png" alt="" />
+            </div>
+          </div>
+          <div class="flex dark:hidden w-full">
+            <div class="piece5">
+              <img src="./media/light/piece5.png" alt="" />
+            </div>
+          </div>
 
-      <section class="websites">
-        <div>
-          <a href="#"> <img src="./media/img/rainy_days.jpg" alt="#" /></a>
-          <a href="#"> <img src="./media/img/museum.jpg" alt="#" /></a>
-          <a href="#"> <img src="./media/img/woodz.jpg" alt="#" /></a>
-        </div>
-      </section>
+          <div class="flex flex-col gap-6">
+            <div>
+              <a href="#"> <img src="./media/img/rainy_days.jpg" alt="#" /></a>
+              <h3>Rainy Days (pure html/css)</h3>
+            </div>
+            <div>
+              <a href="#"> <img src="./media/img/museum.jpg" alt="#" /></a>
+              <h3>Community museum (pure html/css)</h3>
+            </div>
+            <div>
+              <a href="#"> <img src="./media/img/woodz.jpg" alt="#" /></a>
+              <h3>WOODZ (html/css/javascript)</h3>
+            </div>
+          </div>
 
-      <img src="./media/light/piece6.png" alt="" />
-
-      <section class="logos">
-        <div>
-          <img src="logo" alt="logo" />
-          <div>
-            <p>
-              I enjoy creating logos. Although I have not yet had the
-              opportunity to create any official logos for any companies.
-            </p>
-            <p>
-              If you got a good idea for a logo I would love to help develop the
-              idea.
-            </p>
+          <div class="hidden dark:flex w-full">
+            <div class="piece4">
+              <img src="./media/dark/piece4_dark.png" alt="" />
+            </div>
+          </div>
+          <div class="flex dark:hidden w-full">
+            <div class="piece4">
+              <img src="./media/light/piece4.png" alt="" />
+            </div>
           </div>
         </div>
-        <div>
-          <img src="./media/logos/altlogo.png" alt="#" />
-          <img src="./media/logos/bidwell_light.png" alt="#" />
-          <img src="./media/logos/bidwell_dark.png" alt="#" />
-          <img src="./media/logos/flipzone_light.png" alt="#" />
-          <img src="./media/logos/flipzone_dark.png" alt="#" />
-          <img src="./media/logos/holidaze.png" alt="#" />
-          <img src="./media/logos/saa.png" alt="#" />
-          <img src="./media/logos/silje.png" alt="#" />
+      </section>
+
+      <section
+        class="relative top-60 w-full lg:w-2/3 mx-auto text-dark_text dark:text-light_text"
+      >
+        <h2 id="logos" class="text-lg text-center mb-24">LOGOS</h2>
+        <div class="flex">
+          <div
+            class="flex py-6 px-10 mr-5 w-1/2 items-center border-solid border-2 bubble border-white"
+          >
+            <div class="w-1/4 mr-3 flex items-center">
+              <img src="./media/logos/mylogo.png" alt="moami logo" />
+            </div>
+            <div>
+              <p>
+                I enjoy creating logos. Although I have not yet had the
+                opportunity to create any official logos for any companies.
+              </p>
+              <p>
+                If you got a good idea for a logo I would love to help develop
+                the idea.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/3 grid grid-rows-2 grid-flow-col gap-4">
+            <div>
+              <img src="./media/logos/altlogo.png" alt="#" />
+            </div>
+            <div class="block dark:hidden">
+              <img src="./media/logos/bidwell_light.png" alt="#" />
+            </div>
+            <div class="hidden dark:block">
+              <img src="./media/logos/bidwell_dark.png" alt="#" />
+            </div>
+            <div class="block dark:hidden">
+              <img src="./media/logos/flipzone_light.png" alt="#" />
+            </div>
+            <div class="hidden dark:block">
+              <img src="./media/logos/flipzone_dark.png" alt="#" />
+            </div>
+            <div>
+              <img src="./media/logos/holidaze.png" alt="#" />
+            </div>
+            <div>
+              <img src="./media/logos/saa.png" alt="#" />
+            </div>
+            <div>
+              <img src="./media/logos/silje.png" alt="#" />
+            </div>
+          </div>
         </div>
       </section>
-      <section class="contact">
-        <div>
-          <h2>Interessted? Let's have a chat</h2>
-          <p>
-            Got some interesting idea to share? Or are you just curious and want
-            to say hi?
-          </p>
-          <button>Send email</button>
+
+      <div class="hidden dark:block w-full">
+        <div class="flex justify-end relative bottom-28">
+          <img src="./media/dark/piece6_dark.png" alt="" />
         </div>
+      </div>
+      <div class="block dark:hidden w-full">
+        <div class="flex justify-end relative bottom-28">
+          <img src="./media/light/piece6.png" alt="" />
+        </div>
+      </div>
+
+      <section
+        class="relative top-60 w-1/3 lg:w-2/3 mx-auto flex flex-col justify-center items-center p-20 bg-[#EC768D] dark:bg-[#6A68DE] bubble text-light_text"
+      >
+        <h2 class="text-xl font-bold text-center">
+          Interessted? Let's have a chat
+        </h2>
+        <p>
+          Got some interesting idea to share? Or are you just curious and want
+          to say hi?
+        </p>
+        <button class="p-3 bubble bg-[#5FC5B2] dark:bg-[#EF8DA0]">
+          Send email
+        </button>
       </section>
-      <img src="./media/light/piece7.png" alt="" />
-      <img src="./media/light/piece8.png" alt="" />
+
+      <div class="flex items-baseline w-full">
+        <div class="hidden dark:block w-1/3">
+          <div class="">
+            <img src="./media/dark/piece7_dark.png" alt="" />
+          </div>
+        </div>
+        <div class="flex dark:hidden w-1/3">
+          <div class="">
+            <img src="./media/light/piece7.png" alt="" />
+          </div>
+        </div>
+        <div class="hidden dark:flex w-full justify-end">
+          <div class="flex justify-end">
+            <img src="./media/dark/piece8_dark.png" alt="" />
+          </div>
+        </div>
+        <div class="flex dark:hidden w-full justify-end">
+          <div class="flex justify-end">
+            <img src="./media/light/piece8.png" alt="" />
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
